@@ -76,11 +76,19 @@ public class ClockStub : Clock
 
     public ClockStub(int hour)
     {
-        this._hour = hour;
+        _hour = hour;
     }
-
-    public int GetCurrentHour()
+    
+    public DateTime GetCurrentTime()
     {
-        return _hour;
+        var now = DateTime.Now;
+        return new DateTime(
+            now.Year,
+            now.Month,
+            now.Day,
+            _hour,
+            minute: 0,
+            second: 0
+            );
     }
 }
