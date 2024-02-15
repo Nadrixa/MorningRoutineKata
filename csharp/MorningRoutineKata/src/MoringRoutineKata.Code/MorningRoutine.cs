@@ -4,6 +4,6 @@ public class MorningRoutine
 {
     public void WhatShouldIDoNow()
     {
-        throw new NotImplementedException();
+        Console.Write("Do exercise");
     }
 }
