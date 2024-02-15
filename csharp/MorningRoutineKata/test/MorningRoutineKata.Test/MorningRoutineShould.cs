@@ -36,6 +36,38 @@ public class MorningRoutineShould
             Assert.Equal("Read and study", stringWriter.ToString());
         }
     }
+    
+    [Fact]
+    public void HaveBreakfastAtEight()
+    {
+        using (var stringWriter = new StringWriter())
+        {
+            Console.SetOut(stringWriter);
+
+            var clock = new ClockStub(8);
+            var morningRoutine = new MorningRoutine(clock);
+
+            morningRoutine.WhatShouldIDoNow();
+
+            Assert.Equal("Have breakfast", stringWriter.ToString());
+        }
+    }
+    
+    [Fact]
+    public void NoActivityInOtherHours()
+    {
+        using (var stringWriter = new StringWriter())
+        {
+            Console.SetOut(stringWriter);
+
+            var clock = new ClockStub(9);
+            var morningRoutine = new MorningRoutine(clock);
+
+            morningRoutine.WhatShouldIDoNow();
+
+            Assert.Equal("No activity", stringWriter.ToString());
+        }
+    }
 }
 
 public class ClockStub : Clock

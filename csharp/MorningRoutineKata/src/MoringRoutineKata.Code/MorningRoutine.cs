@@ -12,18 +12,25 @@ public class MorningRoutine
     public void WhatShouldIDoNow()
     {
         var hour = _clock.GetCurrentHour();
-
+        
         if (hour == 6)
         {
             Console.Write("Do exercise");
             return;
         }
-        
+
         if (hour == 7)
         {
             Console.Write("Read and study");
             return;
         }
-        
+
+        if (hour == 8)
+        {
+            Console.Write("Have breakfast");
+            return;
+        }
+
+        Console.Write("No activity");
     }
 }
