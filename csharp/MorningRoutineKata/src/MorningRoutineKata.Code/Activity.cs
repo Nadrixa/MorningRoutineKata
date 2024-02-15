@@ -5,10 +5,10 @@ public class Activity
     private readonly string _message;
     private readonly ActivityInterval _interval;
 
-    public Activity(string message, int hour)
+    public Activity(string message, HourAndMinutes start, HourAndMinutes end)
     {
         _message = message;
-        _interval = new ActivityInterval(hour);
+        _interval = new ActivityInterval(start, end);
     }
 
     public string Message()
@@ -27,10 +27,10 @@ public class ActivityInterval
     private readonly HourAndMinutes _start;
     private readonly HourAndMinutes _end;
 
-    public ActivityInterval(int hour)
+    public ActivityInterval(HourAndMinutes start, HourAndMinutes end)
     {
-        _start = new HourAndMinutes(hour, 0);
-        _end = new HourAndMinutes(hour, 59);
+        _start = start;
+        _end = end;
     }
 
     public bool MatchWith(DateTime currentTime)
