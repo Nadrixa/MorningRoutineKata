@@ -6,7 +6,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{D739D17F-4
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MorningRoutineKata.Test", "test\MorningRoutineKata.Test\MorningRoutineKata.Test.csproj", "{3475DD4D-C4FD-4A3E-9E01-8FE56F13A529}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoringRoutineKata.Code", "src\MoringRoutineKata.Code\MoringRoutineKata.Code.csproj", "{5A3FD6EE-94D6-45E3-B494-971EAE27D9DA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MorningRoutineKata.Code", "src\MorningRoutineKata.Code\MorningRoutineKata.Code.csproj", "{5A3FD6EE-94D6-45E3-B494-971EAE27D9DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

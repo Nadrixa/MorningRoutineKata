@@ -1,4 +1,4 @@
-namespace MoringRoutineKata.Code;
+namespace MorningRoutineKata.Code;
 
 public interface Clock
 {

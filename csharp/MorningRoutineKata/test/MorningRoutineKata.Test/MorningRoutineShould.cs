@@ -1,4 +1,4 @@
-using MoringRoutineKata.Code;
+using MorningRoutineKata.Code;
 
 namespace MorningRoutineKata.Test;
 
