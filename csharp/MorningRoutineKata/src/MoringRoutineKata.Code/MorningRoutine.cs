@@ -13,12 +13,17 @@ public class MorningRoutine
     {
         var hour = _clock.GetCurrentHour();
 
+        if (hour == 6)
+        {
+            Console.Write("Do exercise");
+            return;
+        }
+        
         if (hour == 7)
         {
             Console.Write("Read and study");
             return;
         }
         
-        Console.Write("Do exercise");
     }
 }
