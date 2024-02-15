@@ -1,0 +1,7 @@
+# C# 
+**/*/obj
+**/*/bin
+*.DotSettings.user
+
+# RIDER
+.idea
